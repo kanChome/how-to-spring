@@ -23,9 +23,8 @@ import org.apache.http.message.BasicHeaderElementIterator;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.ssl.SSLContextBuilder;
-import org.apache.logging.log4j.Logger;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -35,7 +34,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 @EnableScheduling
 public class HttpClientConfig {
 
-    private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(HttpClientConfig.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HttpClientConfig.class);
 
     private static final int CONNECT_TIMEOUT = 30000;
     private static final int REQUEST_TIMEOUT = 30000;
