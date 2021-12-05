@@ -2,12 +2,9 @@ package com.example.crud.controllers;
 
 import java.util.List;
 
-import javax.websocket.server.PathParam;
-
 import com.example.crud.model.Todo;
 import com.example.crud.services.TodoService;
 
-import org.h2.command.dml.Insert;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

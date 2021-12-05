@@ -34,7 +34,7 @@ public class Todo {
     String description;
 
     @Column
-    String todoStatus;
+    TodoStatus todoStatus;
 
     @CreationTimestamp
     @Column(updatable = false)

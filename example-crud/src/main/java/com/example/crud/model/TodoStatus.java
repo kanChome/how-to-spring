@@ -1,4 +1,4 @@
-package main.java.com.example.crud.examplecrud.model;
+package com.example.crud.model;
 
 public enum TodoStatus {
     COMPLETED, NOT_COMPLETED
